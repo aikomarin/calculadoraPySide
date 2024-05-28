@@ -1,5 +1,6 @@
 from functools import partial
 from PySide6.QtCore import Qt
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QMainWindow, QApplication, QWidget, QVBoxLayout, QLineEdit, QGridLayout, QPushButton
 
 
@@ -10,6 +11,7 @@ class Calculadora(QMainWindow):
         # Ventana
         self.setWindowTitle('Calculadora')
         self.setFixedSize(235, 235)
+        self.setWindowIcon(QIcon("calc.ico"))
 
         # Layout
         self.layout_principal = QVBoxLayout()
